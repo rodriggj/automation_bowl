@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title={teamName} icon-name="standard:apex_plugin">
+        <div class="slds-m-horizontal_medium">
+            <img class="teamLogo" src={teamURL} alt="team logo">
+            <hr>
+            <lightning-record-view-form onload={handleRecordLoaded} record-id={recordId} object-api-name="Team__c" density="compact">
+                <section>
+                    <h2>Record</h2>
+                    <lightning-output-field field-name={wins_field}></lightning-output-field>
+                    <lightning-output-field field-name={loss_field}></lightning-output-field>
+                </section>
+                <section>
+                    <h2>Coaching</h2>
+                    <lightning-output-field field-name={headCoach_field}></lightning-output-field>
+                    <lightning-output-field field-name={offense_field}></lightning-output-field>
+                    <lightning-output-field field-name={defense_field}></lightning-output-field>
+                    <lightning-output-field field-name={specialTeamsCoach_field}></lightning-output-field>
+                </section>
+                <section>
+                    <h2>Stadium</h2>
+                    <lightning-output-field field-name={stadiumName_field}></lightning-output-field>
+                    <lightning-output-field field-name={capacity_field}></lightning-output-field>
+                </section>
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,62 @@
+<template>
+    <lightning-card title="Team Filters" icon-name="standard:calibration">
+        <div class="slds-m-horizontal_medium">
+            <!-- Search Box Component -->
+            <lightning-input 
+                label="Search Key" 
+                type="search" 
+                onchange={handleSearchKeyChange} 
+                value={filters.searchKey}>
+            </lightning-input>
+
+            <!-- Slider Component -->
+            <section class="slider-section">
+                <lightning-slider 
+                    label="Team Record" 
+                    step="1" 
+                    min="0" 
+                    max="16"
+                    value={filters.maxRecord}
+                    onchange={handleMaxRecordChange}>
+                </lightning-slider>
+            </section>
+
+            <!-- Conference Selector Component -->
+            <section>
+                <h2>Conference</h2>
+                <!-- <template if:true={conferences.data}>
+                    <template for:each={conferences.data.values} for:item="conference">
+                        <lightning-input 
+                            key={conference.label}
+                            label={conference.label}
+                            type="checkbox"
+                            checked
+                            onchange={handleCheckbox}>
+                        </lightning-input>
+                    </template>
+                </template>
+                <template if:true={conference.error}>
+                    <div>{conferenceError}</div>
+                </template> -->
+            </section>
+
+            <!-- Division Selector Component -->
+            <section>
+                <h2>Division</h2>
+                <!-- <template if:true={divisions.data}>
+                    <template for:each={divisions.data.values} for:item="division">
+                        <lightning-input 
+                        key={division.label}
+                        label={division.label}
+                        type="checkbox"
+                        checked
+                        onchange={handleCheckbox}></lightning-input>
+                    </template>
+                </template>
+                <template if:true={divisions.error}>
+                    <div>{divisionError}</div>
+                </template> -->
+            </section>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Team Tile List" icon-name="standard:account">
+        <div class="slds-p-around-medium wrapper">
+            <template if:true={teams}>
+                <div class="content">
+                    <template for:each={teams} for:item="team">
+                        <c-team-tile
+                            key={team.ID__c}
+                            team={team}></c-team-tile>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

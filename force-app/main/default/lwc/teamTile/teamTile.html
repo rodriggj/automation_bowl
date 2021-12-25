@@ -1,0 +1,19 @@
+<template>
+    <article class="slds-card">
+        <div style="background-image:url(https://automationbowlimgs.s3.us-west-2.amazonaws.com/dark_bg2.jpeg); height:80px;" class="slds-grid slds-einstein-header slds-card__header">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-grid slds-grid_vertical-align-center slds-size_3-of-4 slds-medium-size_2-of-3">
+                    <div class="slds-media__body">
+                        <h2 class="slds-truncate upperBold teamName" title="Team Name">{team.Name}</h2>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <img class="teamLogo" src={team.LogoURL__c}>
+        </div>
+        <footer class="slds-card__footer">
+            <p>{team.Conference__c} {team.Division__c} </p>
+        </footer>
+    </article>
+</template>

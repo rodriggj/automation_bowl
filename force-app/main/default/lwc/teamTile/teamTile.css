@@ -1,0 +1,16 @@
+.teamLogo{
+    height: 120px;
+    width: 120px;
+    vertical-align: middle;
+    text-align: center;
+    margin-left:27%;
+}
+
+.upperBold{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.teamName{
+    color: white;
+}

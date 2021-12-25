@@ -1,0 +1,15 @@
+c-team-tile{
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px; 
+    margin-bottom: 5px;
+    min-width: 120px;
+    flex:2 2 25%;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper{
+    background-color: lightgray;
+}
